@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolfinn - Beast Mode Fitness Transformation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(239, 68, 68, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+        }
+
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .glow-border {
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
+        }
+
+        .power-grid {
+            background-image: 
+                linear-gradient(rgba(239, 68, 68, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(239, 68, 68, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hexagon {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+
+        .energy-bar {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .energy-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: energyFlow 2s infinite;
+        }
+
+        @keyframes energyFlow {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-black gradient-text">DOLFINN</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#journey" class="text-gray-400 hover:text-white transition">Journey</a>
+                    <a href="#transformation" class="text-gray-400 hover:text-white transition">Transformation</a>
+                    <a href="#training" class="text-gray-400 hover:text-white transition">Training</a>
+                    <a href="#nutrition" class="text-gray-400 hover:text-white transition">Nutrition</a>
+                    <a href="#lifestyle" class="text-gray-400 hover:text-white transition">Lifestyle</a>
+                    <a href="#community" class="text-gray-400 hover:text-white transition">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden hero-pattern power-grid">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden opacity-30">
+            <div class="absolute top-20 left-10 w-32 h-32 hexagon bg-red-500/20 float-animation"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 hexagon bg-orange-500/20 float-animation" style="animation-delay: 0.5s;"></div>
+            <div class="absolute bottom-40 left-1/4 w-40 h-40 hexagon bg-red-500/10 float-animation" style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-20 right-1/3 w-28 h-28 hexagon bg-orange-500/15 float-animation" style="animation-delay: 1.5s;"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 py-32 text-center z-10">
+            <!-- Power Badge -->
+            <div class="inline-block mb-6 px-8 py-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-2xl shadow-red-500/50 glow-border transform hover:scale-105 transition">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">💪</span>
+                    <span class="text-white text-sm font-black tracking-wider">OFFICIAL MUSCLEBLAZE ATHLETE</span>
+                    <span class="text-2xl">🔥</span>
+                </div>
+            </div>
+
+            <h1 class="text-7xl md:text-9xl font-black mb-6 leading-tight">
+                FROM <span class="text-gray-500">ZERO</span><br/>
+                TO <span class="gradient-text">BEAST MODE</span>
+            </h1>
+            
+            <div class="flex items-center justify-center gap-4 mb-8">
+                <div class="h-1 w-20 bg-gradient-to-r from-transparent to-red-500"></div>
+                <div class="text-2xl font-black text-red-500">⚡</div>
+                <div class="h-1 w-20 bg-gradient-to-l from-transparent to-orange-500"></div>
+            </div>
+
+            <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto font-bold">
+                5 YEARS. 2000+ WORKOUTS. 35KG MUSCLE GAINED.
+            </p>
+            <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                Fueled by discipline, powered by MuscleBlaze, driven by relentless pursuit of excellence
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center mb-16">
+                <a href="#transformation" class="group px-10 py-5 gradient-bg text-white font-black text-lg rounded-full hover:shadow-2xl hover:shadow-red-500/50 transition transform hover:scale-110 flex items-center justify-center gap-3">
+                    <span>SEE THE BEAST TRANSFORMATION</span>
+                    <span class="text-2xl group-hover:translate-x-2 transition">→</span>
+                </a>
+                <a href="#journey" class="px-10 py-5 bg-white/5 border-2 border-white/20 text-white font-bold text-lg rounded-full hover:bg-white/10 transition backdrop-blur-lg flex items-center justify-center gap-3">
+                    <span>📖</span>
+                    <span>THE JOURNEY</span>
+                </a>
+            </div>
+            
+            <!-- Power Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+                <div class="bg-black/60 backdrop-blur-xl border-2 border-red-500/50 rounded-2xl p-6 glow-border transform hover:scale-105 transition group">
+                    <div class="text-5xl mb-3 group-hover:scale-110 transition">💪</div>
+                    <div class="text-5xl font-black gradient-text mb-2">5+</div>
+                    <div class="text-gray-300 font-bold text-sm">YEARS GRINDING</div>
+                    <div class="h-1 w-full bg-gradient-to-r from-red-500 to-orange-500 mt-3 rounded energy-bar"></div>
+                </div>
+                <div class="bg-black/60 backdrop-blur-xl border-2 border-orange-500/50 rounded-2xl p-6 glow-border transform hover:scale-105 transition group">
+                    <div class="text-5xl mb-3 group-hover:scale-110 transition">🔥</div>
+                    <div class="text-5xl font-black gradient-text mb-2">2000+</div>
+                    <div class="text-gray-300 font-bold text-sm">WORKOUTS</div>
+                    <div class="h-1 w-full bg-gradient-to-r from-orange-500 to-red-500 mt-3 rounded energy-bar"></div>
+                </div>
+                <div class="bg-black/60 backdrop-blur-xl border-2 border-red-500/50 rounded-2xl p-6 glow-border transform hover:scale-105 transition group">
+                    <div class="text-5xl mb-3 group-hover:scale-110 transition">⚡</div>
+                    <div class="text-5xl font-black gradient-text mb-2">35kg</div>
+                    <div class="text-gray-300 font-bold text-sm">PURE MUSCLE</div>
+                    <div class="h-1 w-full bg-gradient-to-r from-red-500 to-orange-500 mt-3 rounded energy-bar"></div>
+                </div>
+                <div class="bg-black/60 backdrop-blur-xl border-2 border-orange-500/50 rounded-2xl p-6 glow-border transform hover:scale-105 transition group">
+                    <div class="text-5xl mb-3 group-hover:scale-110 transition">🏆</div>
+                    <div class="text-5xl font-black gradient-text mb-2">100K+</div>
+                    <div class="text-gray-300 font-bold text-sm">INSPIRED</div>
+                    <div class="h-1 w-full bg-gradient-to-r from-orange-500 to-red-500 mt-3 rounded energy-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enhanced Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <div class="animate-bounce flex flex-col items-center gap-2">
+                <div class="text-red-500 text-sm font-bold tracking-wider">SCROLL</div>
+                <svg class="w-8 h-8 text-red-500 pulse-animation" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Philosophy -->
+    <section id="training" class="py-32 bg-black relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-red-500 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-red-500/20 border border-red-500 rounded-full mb-6">
+                    <span class="text-red-500 text-sm font-black tracking-widest">BEYOND THE GYM</span>
+                </div>
+                <h2 class="text-6xl md:text-7xl font-black mb-6">
+                    <span class="gradient-text">LIFESTYLE</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto font-bold">
+                    A glimpse into the daily routine, habits, and mindset that make it all possible
+                </p>
+            </div>
+
+            <!-- Daily Routine -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 text-center">A Day In The Life</h3>
+                <div class="space-y-4">
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">⏰</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">5:30 AM - Wake Up</div>
+                            <div class="text-gray-400 text-sm">Hydrate with 1L water, light stretching</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">🏋️</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">6:30 AM - Training Session</div>
+                            <div class="text-gray-400 text-sm">90 minutes of focused, intense training</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">📸</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">9:00 AM - Content Creation</div>
+                            <div class="text-gray-400 text-sm">Photos, videos, engaging with community</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">💼</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">11:00 AM - Brand Collaborations</div>
+                            <div class="text-gray-400 text-sm">Meetings, shoots, partnership discussions</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">📚</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">3:00 PM - Learning & Growth</div>
+                            <div class="text-gray-400 text-sm">Fitness research, nutrition studies, business development</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">🧘</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">6:00 PM - Active Recovery</div>
+                            <div class="text-gray-400 text-sm">Walk, yoga, mobility work</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-6 border border-white/10 flex items-center gap-6">
+                        <div class="text-3xl">😴</div>
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">10:00 PM - Sleep</div>
+                            <div class="text-gray-400 text-sm">8 hours of quality sleep for recovery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
+                <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-2xl flex items-center justify-center border border-red-500/20 transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">📸</div>
+                        <div class="text-sm text-gray-400">Gym Session</div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-2xl flex items-center justify-center border border-red-500/20 transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">🥗</div>
+                        <div class="text-sm text-gray-400">Meal Prep</div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-2xl flex items-center justify-center border border-red-500/20 transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">💪</div>
+                        <div class="text-sm text-gray-400">Training</div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-2xl flex items-center justify-center border border-red-500/20 transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">🎥</div>
+                        <div class="text-sm text-gray-400">Content</div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-2xl flex items-center justify-center border border-red-500/20 transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">🏆</div>
+                        <div class="text-sm text-gray-400">Achievements</div>
+                    </div>
+                </div>
+                <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-2xl flex items-center justify-center border border-red-500/20 transform hover:scale-105 transition">
+                    <div class="text-center">
+                        <div class="text-5xl mb-2">🤝</div>
+                        <div class="text-sm text-gray-400">Collaborations</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy -->
+            <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-3xl p-12 border border-red-500/20 text-center">
+                <div class="text-6xl mb-6">💭</div>
+                <h3 class="text-3xl font-bold mb-6">My Philosophy</h3>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
+                    "Fitness isn't a destination—it's a lifestyle. Every rep, every meal, every choice is a vote for the person you want to become. The gym taught me that the only limits that exist are the ones we accept in our minds."
+                </p>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Success in fitness mirrors success in life: consistency beats intensity, patience beats speed, and discipline beats motivation every single time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Social Proof -->
+    <section id="community" class="py-32 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-red-500/20 border border-red-500 rounded-full mb-6">
+                    <span class="text-red-500 text-sm font-black tracking-widest">GROWING TOGETHER</span>
+                </div>
+                <h2 class="text-6xl md:text-7xl font-black mb-6">
+                    <span class="gradient-text">COMMUNITY</span> IMPACT
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto font-bold">
+                    Building a movement of motivated individuals committed to transformation
+                </p>
+            </div>
+
+            <!-- Social Stats -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10 text-center card-hover">
+                    <div class="text-5xl mb-4">📱</div>
+                    <div class="text-4xl font-black gradient-text mb-2">100K+</div>
+                    <div class="text-gray-400 mb-4">Instagram Followers</div>
+                    <div class="text-sm text-gray-500">Growing 5K+ monthly</div>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10 text-center card-hover">
+                    <div class="text-5xl mb-4">💬</div>
+                    <div class="text-4xl font-black gradient-text mb-2">50K+</div>
+                    <div class="text-gray-400 mb-4">Monthly Engagement</div>
+                    <div class="text-sm text-gray-500">Comments, shares, saves</div>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10 text-center card-hover">
+                    <div class="text-5xl mb-4">🌟</div>
+                    <div class="text-4xl font-black gradient-text mb-2">500+</div>
+                    <div class="text-gray-400 mb-4">Transformation Stories</div>
+                    <div class="text-sm text-gray-500">People I've inspired</div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 text-center">What The Community Says</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                        <div class="flex gap-1 mb-4">
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Dolfinn's journey inspired me to start my own. Down 15kg in 6 months following his principles!"</p>
+                        <div class="text-sm text-gray-500">- Rahul K., Mumbai</div>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                        <div class="flex gap-1 mb-4">
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Real, authentic content. No shortcuts, just hard work and dedication. Exactly what I needed to see."</p>
+                        <div class="text-sm text-gray-500">- Priya S., Bangalore</div>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                        <div class="flex gap-1 mb-4">
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                            <span class="text-red-500">⭐</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"His transformation timeline kept me motivated through my own journey. Now I'm 20kg heavier with muscle!"</p>
+                        <div class="text-sm text-gray-500">- Arjun M., Delhi</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="bg-gradient-to-br from-red-600/20 to-orange-600/20 rounded-3xl p-12 border border-red-500/30 text-center">
+                <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+                <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                    Follow the journey, get daily motivation, training tips, and be part of a community that's committed to excellence
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.instagram.com/dolfinn.13/" target="_blank" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full hover:shadow-2xl hover:shadow-purple-500/50 transition transform hover:scale-105 flex items-center gap-2">
+                        <span class="text-2xl">📸</span>
+                        Instagram @dolfinn.13
+                    </a>
+                    <a href="#" class="px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full hover:shadow-2xl hover:shadow-red-500/50 transition transform hover:scale-105 flex items-center gap-2">
+                        <span class="text-2xl">▶️</span>
+                        YouTube
+                    </a>
+                    <a href="#" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-full hover:shadow-2xl hover:shadow-blue-500/50 transition transform hover:scale-105 flex items-center gap-2">
+                        <span class="text-2xl">💼</span>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-black gradient-text mb-4">DOLFINN</div>
+                    <p class="text-gray-400 text-sm">Official MuscleBlaze Athlete inspiring thousands through authentic fitness content and transformation stories.</p>
+                </div>
+                <div>
+                    <div class="font-bold mb-4">Quick Links</div>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <div><a href="#journey" class="hover:text-white transition">Journey</a></div>
+                        <div><a href="#transformation" class="hover:text-white transition">Transformation</a></div>
+                        <div><a href="#training" class="hover:text-white transition">Training</a></div>
+                        <div><a href="#nutrition" class="hover:text-white transition">Nutrition</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-bold mb-4">Partnership</div>
+                    <div class="text-gray-400 text-sm mb-4">
+                        Proud Official Athlete of MuscleBlaze - India's #1 Sports Nutrition Brand
+                    </div>
+                    <div class="text-red-500 font-bold text-lg">MUSCLEBLAZE</div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Dolfinn. All Rights Reserved. | MuscleBlaze Official Athlete | Fitness • Transformation • Inspiration</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover, section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>500/20 border border-red-500 rounded-full mb-6">
+                    <span class="text-red-500 text-sm font-black tracking-widest flex items-center gap-2">
+                        <span>⚡</span>
+                        <span>PROVEN TRAINING SYSTEM</span>
+                        <span>⚡</span>
+                    </span>
+                </div>
+                <h2 class="text-6xl md:text-7xl font-black mb-6">
+                    THE <span class="gradient-text">BEAST MODE</span><br/>TRAINING SYSTEM
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto font-bold">
+                    Science-backed. Battle-tested. Results-proven.
+                </p>
+            </div>
+
+            <!-- Core Principles -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-8 border-2 border-red-500/30 text-center transform hover:scale-105 transition glow-border">
+                    <div class="text-6xl mb-4">📈</div>
+                    <div class="text-2xl font-black mb-3 text-white">PROGRESSIVE OVERLOAD</div>
+                    <div class="text-gray-300 leading-relaxed">
+                        Constantly increasing weight, reps, or volume. Every workout is designed to push past yesterday's limits.
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-8 border-2 border-orange-500/30 text-center transform hover:scale-105 transition glow-border">
+                    <div class="text-6xl mb-4">🎯</div>
+                    <div class="text-2xl font-black mb-3 text-white">MIND-MUSCLE CONNECTION</div>
+                    <div class="text-gray-300 leading-relaxed">
+                        Quality over quantity. Feeling every fiber contract, not just moving weight around.
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-8 border-2 border-red-500/30 text-center transform hover:scale-105 transition glow-border">
+                    <div class="text-6xl mb-4">💯</div>
+                    <div class="text-2xl font-black mb-3 text-white">PERFECT FORM</div>
+                    <div class="text-gray-300 leading-relaxed">
+                        Safety first, gains second. Proper form prevents injury and maximizes muscle activation.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Split -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-black text-center mb-12">
+                    <span class="gradient-text">6-DAY POWER SPLIT</span>
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Push Day -->
+                    <div class="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border-2 border-red-500/50 card-hover relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full filter blur-2xl group-hover:blur-xl transition"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="text-6xl">🔥</div>
+                                <div>
+                                    <div class="text-3xl font-black gradient-text">PUSH DAY</div>
+                                    <div class="text-sm text-gray-400 font-bold">CHEST • SHOULDERS • TRICEPS</div>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 rounded-xl p-4 mb-6">
+                                <div class="text-red-500 font-bold mb-2">🎯 OBJECTIVE: Build pressing power and upper body mass</div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💪 Flat Bench Press</span>
+                                    <span class="text-red-500 font-bold">4×8-12</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🏋️ Overhead Press</span>
+                                    <span class="text-red-500 font-bold">4×8-10</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">📐 Incline Dumbbell Press</span>
+                                    <span class="text-red-500 font-bold">3×10-12</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">⚡ Lateral Raises</span>
+                                    <span class="text-red-500 font-bold">3×12-15</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💥 Tricep Dips</span>
+                                    <span class="text-red-500 font-bold">3×10-12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pull Day -->
+                    <div class="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border-2 border-orange-500/50 card-hover relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full filter blur-2xl group-hover:blur-xl transition"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="text-6xl">💪</div>
+                                <div>
+                                    <div class="text-3xl font-black gradient-text">PULL DAY</div>
+                                    <div class="text-sm text-gray-400 font-bold">BACK • BICEPS • REAR DELTS</div>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 rounded-xl p-4 mb-6">
+                                <div class="text-orange-500 font-bold mb-2">🎯 OBJECTIVE: Build width, thickness, and back power</div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">⚡ Deadlifts (Heavy)</span>
+                                    <span class="text-orange-500 font-bold">4×6-8</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💪 Weighted Pull-Ups</span>
+                                    <span class="text-orange-500 font-bold">4×8-10</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🏋️ Barbell Rows</span>
+                                    <span class="text-orange-500 font-bold">4×8-10</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🎯 Face Pulls</span>
+                                    <span class="text-orange-500 font-bold">3×15-20</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💥 Barbell Curls</span>
+                                    <span class="text-orange-500 font-bold">3×10-12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legs Day -->
+                    <div class="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border-2 border-red-500/50 card-hover relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full filter blur-2xl group-hover:blur-xl transition"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="text-6xl">🦵</div>
+                                <div>
+                                    <div class="text-3xl font-black gradient-text">LEG DAY</div>
+                                    <div class="text-sm text-gray-400 font-bold">QUADS • HAMSTRINGS • CALVES</div>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 rounded-xl p-4 mb-6">
+                                <div class="text-red-500 font-bold mb-2">🎯 OBJECTIVE: Never skip leg day - Build foundation</div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🏋️ Back Squats (Heavy)</span>
+                                    <span class="text-red-500 font-bold">5×6-10</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💪 Romanian Deadlifts</span>
+                                    <span class="text-red-500 font-bold">4×8-10</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">⚡ Leg Press</span>
+                                    <span class="text-red-500 font-bold">4×12-15</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🎯 Leg Curls</span>
+                                    <span class="text-orange-500 font-bold">3×12-15</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💥 Calf Raises</span>
+                                    <span class="text-orange-500 font-bold">4×15-20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core & Conditioning -->
+                    <div class="bg-black/60 backdrop-blur-xl rounded-3xl p-8 border-2 border-orange-500/50 card-hover relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full filter blur-2xl group-hover:blur-xl transition"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="text-6xl">⚡</div>
+                                <div>
+                                    <div class="text-3xl font-black gradient-text">CONDITIONING</div>
+                                    <div class="text-sm text-gray-400 font-bold">CORE • CARDIO • MOBILITY</div>
+                                </div>
+                            </div>
+                            <div class="bg-white/5 rounded-xl p-4 mb-6">
+                                <div class="text-orange-500 font-bold mb-2">🎯 OBJECTIVE: Athletic performance & recovery</div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">💪 Plank Variations</span>
+                                    <span class="text-orange-500 font-bold">3×60s</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🎯 Hanging Leg Raises</span>
+                                    <span class="text-orange-500 font-bold">3×12-15</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🔥 HIIT Cardio</span>
+                                    <span class="text-orange-500 font-bold">20min/2×week</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">⚡ Daily Stretching</span>
+                                    <span class="text-orange-500 font-bold">15min</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-4 flex items-center justify-between hover:bg-white/10 transition">
+                                    <span class="text-gray-300">🚶 Active Recovery</span>
+                                    <span class="text-orange-500 font-bold">10K+ steps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Intensity Meter -->
+            <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-3xl p-12 border-2 border-red-500/50 relative overflow-hidden">
+                <div class="absolute inset-0 power-grid opacity-20"></div>
+                <div class="relative z-10">
+                    <h3 class="text-4xl font-black text-center mb-8">
+                        <span class="gradient-text">INTENSITY METRICS</span>
+                    </h3>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-6xl mb-3">⏱️</div>
+                            <div class="text-3xl font-black text-white mb-2">90min</div>
+                            <div class="text-gray-300 text-sm">Session Duration</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-6xl mb-3">💪</div>
+                            <div class="text-3xl font-black text-white mb-2">15-20</div>
+                            <div class="text-gray-300 text-sm">Sets Per Workout</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-6xl mb-3">🔥</div>
+                            <div class="text-3xl font-black text-white mb-2">6×</div>
+                            <div class="text-gray-300 text-sm">Training Days/Week</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-6xl mb-3">⚡</div>
+                            <div class="text-3xl font-black text-white mb-2">100%</div>
+                            <div class="text-gray-300 text-sm">Effort Level</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="py-32 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-red-500/20 border border-red-500 rounded-full mb-6">
+                    <span class="text-red-500 text-sm font-black tracking-widest">FUEL FOR SUCCESS</span>
+                </div>
+                <h2 class="text-6xl md:text-7xl font-black mb-6">
+                    <span class="gradient-text">NUTRITION</span> PROTOCOL
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto font-bold">
+                    You can't out-train a bad diet. Here's exactly what I eat to build muscle.
+                </p>
+            </div>
+
+            <!-- Daily Nutrition Overview -->
+            <div class="grid md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                    <div class="text-5xl font-black gradient-text mb-2">3200</div>
+                    <div class="text-gray-400 text-sm">Daily Calories</div>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                    <div class="text-5xl font-black gradient-text mb-2">180g</div>
+                    <div class="text-gray-400 text-sm">Protein</div>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                    <div class="text-5xl font-black gradient-text mb-2">400g</div>
+                    <div class="text-gray-400 text-sm">Carbs</div>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                    <div class="text-5xl font-black gradient-text mb-2">90g</div>
+                    <div class="text-gray-400 text-sm">Fats</div>
+                </div>
+            </div>
+
+            <!-- Meal Plan -->
+            <div class="space-y-6 mb-16">
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl">🌅</div>
+                        <div>
+                            <div class="text-xl font-bold">Meal 1 - 6:00 AM (Pre-Workout)</div>
+                            <div class="text-sm text-gray-400">Energy to fuel morning training</div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 ml-12">
+                        <div class="text-gray-400">• 4 whole eggs + 2 egg whites</div>
+                        <div class="text-gray-400">• 100g oats with banana</div>
+                        <div class="text-gray-400">• MuscleBlaze Pre-Workout</div>
+                        <div class="text-gray-400">• Black coffee</div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl">💪</div>
+                        <div>
+                            <div class="text-xl font-bold">Meal 2 - 9:00 AM (Post-Workout)</div>
+                            <div class="text-sm text-gray-400">Anabolic window optimization</div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 ml-12">
+                        <div class="text-gray-400">• MuscleBlaze Whey Protein (30g)</div>
+                        <div class="text-gray-400">• 150g white rice</div>
+                        <div class="text-gray-400">• 200g grilled chicken</div>
+                        <div class="text-gray-400">• Mixed vegetables</div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl">🍽️</div>
+                        <div>
+                            <div class="text-xl font-bold">Meal 3 - 12:30 PM (Lunch)</div>
+                            <div class="text-sm text-gray-400">Sustained energy and recovery</div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 ml-12">
+                        <div class="text-gray-400">• 200g fish or chicken</div>
+                        <div class="text-gray-400">• 200g sweet potato</div>
+                        <div class="text-gray-400">• Large salad with olive oil</div>
+                        <div class="text-gray-400">• Handful of almonds</div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl">🥤</div>
+                        <div>
+                            <div class="text-xl font-bold">Meal 4 - 4:00 PM (Snack)</div>
+                            <div class="text-sm text-gray-400">Bridging the energy gap</div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 ml-12">
+                        <div class="text-gray-400">• MuscleBlaze Protein Bar</div>
+                        <div class="text-gray-400">• Fruit (apple or berries)</div>
+                        <div class="text-gray-400">• Greek yogurt</div>
+                        <div class="text-gray-400">• Green tea</div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl">🌙</div>
+                        <div>
+                            <div class="text-xl font-bold">Meal 5 - 8:00 PM (Dinner)</div>
+                            <div class="text-sm text-gray-400">Final meal for overnight recovery</div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 ml-12">
+                        <div class="text-gray-400">• 250g lean beef or salmon</div>
+                        <div class="text-gray-400">• 150g brown rice</div>
+                        <div class="text-gray-400">• Steamed broccoli and asparagus</div>
+                        <div class="text-gray-400">• MuscleBlaze Omega-3</div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-2xl p-8 border border-red-500/50">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl">😴</div>
+                        <div>
+                            <div class="text-xl font-bold">Meal 6 - 10:30 PM (Pre-Sleep)</div>
+                            <div class="text-sm text-gray-400">Slow-digesting protein for recovery</div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 ml-12">
+                        <div class="text-gray-400">• MuscleBlaze Casein Protein</div>
+                        <div class="text-gray-400">• Cottage cheese</div>
+                        <div class="text-gray-400">• Handful of walnuts</div>
+                        <div class="text-gray-400">• ZMA supplement</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supplement Stack -->
+            <div class="bg-gradient-to-br from-red-600/10 to-orange-600/10 rounded-3xl p-12 border border-red-500/20">
+                <h3 class="text-3xl font-bold mb-8 text-center">MuscleBlaze Supplement Stack</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-black/30 rounded-xl p-6">
+                        <div class="text-3xl mb-3">🥤</div>
+                        <div class="font-bold text-lg mb-2">Whey Gold Protein</div>
+                        <div class="text-gray-400 text-sm mb-2">Post-workout and between meals</div>
+                        <div class="text-red-500 text-sm font-bold">30g x 2 daily</div>
+                    </div>
+                    <div class="bg-black/30 rounded-xl p-6">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <div class="font-bold text-lg mb-2">Pre-Workout Ripped</div>
+                        <div class="text-gray-400 text-sm mb-2">30 mins before training</div>
+                        <div class="text-red-500 text-sm font-bold">1 scoop daily</div>
+                    </div>
+                    <div class="bg-black/30 rounded-xl p-6">
+                        <div class="text-3xl mb-3">💊</div>
+                        <div class="font-bold text-lg mb-2">Creatine Monohydrate</div>
+                        <div class="text-gray-400 text-sm mb-2">Post-workout for strength</div>
+                        <div class="text-red-500 text-sm font-bold">5g daily</div>
+                    </div>
+                    <div class="bg-black/30 rounded-xl p-6">
+                        <div class="text-3xl mb-3">🌙</div>
+                        <div class="font-bold text-lg mb-2">Casein Protein</div>
+                        <div class="text-gray-400 text-sm mb-2">Before bed for recovery</div>
+                        <div class="text-red-500 text-sm font-bold">30g nightly</div>
+                    </div>
+                    <div class="bg-black/30 rounded-xl p-6">
+                        <div class="text-3xl mb-3">🐟</div>
+                        <div class="font-bold text-lg mb-2">Omega-3 Fish Oil</div>
+                        <div class="text-gray-400 text-sm mb-2">Joint health and recovery</div>
+                        <div class="text-red-500 text-sm font-bold">2 caps daily</div>
+                    </div>
+                    <div class="bg-black/30 rounded-xl p-6">
+                        <div class="text-3xl mb-3">🔋</div>
+                        <div class="font-bold text-lg mb-2">Multivitamin</div>
+                        <div class="text-gray-400 text-sm mb-2">Complete micronutrients</div>
+                        <div class="text-red-500 text-sm font-bold">1 tablet daily</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle & Behind The Scenes -->
+    <section id="lifestyle" class="py-32 bg-black">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-red-
+
+    <!-- MuscleBlaze Partnership -->
+    <section class="py-20 bg-gradient-to-br from-red-600 via-red-700 to-orange-600 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 20% 50%, white 2px, transparent 2px); background-size: 30px 30px;"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+            <div class="bg-black/40 backdrop-blur-xl rounded-3xl p-12 border-2 border-white/30 glow-border">
+                <!-- Power Badge -->
+                <div class="inline-block mb-6 px-6 py-2 bg-white/20 backdrop-blur rounded-full border border-white/30">
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl">⚡</span>
+                        <span class="text-sm uppercase tracking-widest font-black text-white">Powered By India's #1</span>
+                        <span class="text-2xl">💪</span>
+                    </div>
+                </div>
+
+                <h2 class="text-6xl md:text-8xl font-black mb-4 text-white" style="text-shadow: 0 0 30px rgba(0,0,0,0.5);">
+                    MUSCLEBLAZE
+                </h2>
+                
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <div class="h-1 w-16 bg-white/50"></div>
+                    <div class="text-3xl">🏆</div>
+                    <div class="h-1 w-16 bg-white/50"></div>
+                </div>
+
+                <div class="text-2xl md:text-3xl font-black mb-8 text-white">
+                    OFFICIAL ATHLETE PARTNERSHIP
+                </div>
+
+                <p class="text-lg md:text-xl text-white/95 max-w-3xl mx-auto leading-relaxed mb-12 font-medium">
+                    Every rep powered by premium supplements. Every meal optimized with world-class nutrition. Every goal achieved with India's most trusted sports nutrition brand. This is the partnership that fuels champions.
+                </p>
+
+                <!-- Feature Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white/15 backdrop-blur-lg rounded-2xl p-8 border border-white/20 transform hover:scale-105 transition group">
+                        <div class="text-5xl mb-4 group-hover:scale-110 transition">💪</div>
+                        <div class="font-black text-xl mb-3 text-white">PREMIUM WHEY PROTEIN</div>
+                        <div class="text-white/90 mb-4">Fastest absorbing protein for maximum muscle growth and recovery</div>
+                        <div class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-bold text-white">30g × 2 Daily</div>
+                    </div>
+                    <div class="bg-white/15 backdrop-blur-lg rounded-2xl p-8 border border-white/20 transform hover:scale-105 transition group">
+                        <div class="text-5xl mb-4 group-hover:scale-110 transition">⚡</div>
+                        <div class="font-black text-xl mb-3 text-white">EXPLOSIVE PRE-WORKOUT</div>
+                        <div class="text-white/90 mb-4">Scientifically formulated for intense energy and laser focus</div>
+                        <div class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-bold text-white">Every Session</div>
+                    </div>
+                    <div class="bg-white/15 backdrop-blur-lg rounded-2xl p-8 border border-white/20 transform hover:scale-105 transition group">
+                        <div class="text-5xl mb-4 group-hover:scale-110 transition">🎯</div>
+                        <div class="font-black text-xl mb-3 text-white">COMPLETE STACK</div>
+                        <div class="text-white/90 mb-4">Full spectrum nutrition from pre-workout to recovery</div>
+                        <div class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-bold text-white">24/7 Fueled</div>
+                    </div>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+                        <div class="text-3xl font-black text-white mb-1">100%</div>
+                        <div class="text-white/80 text-sm">Authentic Products</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+                        <div class="text-3xl font-black text-white mb-1">#1</div>
+                        <div class="text-white/80 text-sm">Brand in India</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+                        <div class="text-3xl font-black text-white mb-1">5★</div>
+                        <div class="text-white/80 text-sm">Quality Rating</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-4">
+                        <div class="text-3xl font-black text-white mb-1">10M+</div>
+                        <div class="text-white/80 text-sm">Happy Customers</div>
+                    </div>
+                </div>
+
+                <div class="text-white/70 text-sm italic">
+                    "The only supplement brand I trust to fuel my transformation journey"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Journey -->
+    <section id="transformation" class="py-32 bg-zinc-950 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 power-grid opacity-20"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-red-500/20 border border-red-500 rounded-full mb-6">
+                    <span class="text-red-500 text-sm font-black tracking-widest">THE PROOF IS IN THE GAINS</span>
+                </div>
+                <h2 class="text-6xl md:text-7xl font-black mb-6">
+                    <span class="gradient-text">TRANSFORMATION</span> TIMELINE
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto font-bold">
+                    5 YEARS • 2000+ WORKOUTS • 35KG MUSCLE • ZERO SHORTCUTS
+                </p>
+            </div>
+
+            <!-- Before/After Showcase -->
+            <div class="grid md:grid-cols-2 gap-8 mb-20">
+                <!-- Before Card -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 border-2 border-gray-700 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 px-6 py-2 bg-gray-700 text-gray-300 font-bold rounded-bl-2xl">
+                        DAY 1
+                    </div>
+                    <div class="aspect-[3/4] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl mb-6 flex items-center justify-center border-2 border-gray-700 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="text-center z-10">
+                            <div class="text-7xl mb-4">📅</div>
+                            <div class="text-3xl font-black mb-2">2019</div>
+                            <div class="text-gray-400 text-lg">The Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                        <div class="bg-black/40 rounded-xl p-4 border border-gray-700">
+                            <div class="text-3xl font-black text-gray-400 mb-1">62kg</div>
+                            <div class="text-xs text-gray-500 uppercase">Weight</div>
+                        </div>
+                        <div class="bg-black/40 rounded-xl p-4 border border-gray-700">
+                            <div class="text-3xl font-black text-gray-400 mb-1">18%</div>
+                            <div class="text-xs text-gray-500 uppercase">Body Fat</div>
+                        </div>
+                        <div class="bg-black/40 rounded-xl p-4 border border-gray-700">
+                            <div class="text-3xl font-black text-gray-400 mb-1">0</div>
+                            <div class="text-xs text-gray-500 uppercase">Training</div>
+                        </div>
+                    </div>
+                    <div class="text-gray-400 text-sm">
+                        Skinny, weak, no direction. Just a dream and determination to change.
+                    </div>
+                </div>
+                
+                <!-- After Card -->
+                <div class="bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-3xl p-8 border-2 border-red-500 relative overflow-hidden group glow-border">
+                    <div class="absolute top-0 right-0 px-6 py-2 gradient-bg text-white font-black rounded-bl-2xl flex items-center gap-2">
+                        <span>TODAY</span>
+                        <span class="text-xl">🏆</span>
+                    </div>
+                    <div class="aspect-[3/4] bg-gradient-to-br from-red-900/40 to-orange-900/40 rounded-2xl mb-6 flex items-center justify-center border-2 border-red-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="text-center z-10">
+                            <div class="text-7xl mb-4">💪</div>
+                            <div class="text-3xl font-black mb-2 text-white">2024</div>
+                            <div class="text-red-400 text-lg font-bold">Beast Mode Achieved</div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                        <div class="bg-black/60 rounded-xl p-4 border border-red-500/50">
+                            <div class="text-3xl font-black gradient-text mb-1">88kg</div>
+                            <div class="text-xs text-red-400 uppercase font-bold">Weight</div>
+                        </div>
+                        <div class="bg-black/60 rounded-xl p-4 border border-red-500/50">
+                            <div class="text-3xl font-black gradient-text mb-1">10%</div>
+                            <div class="text-xs text-red-400 uppercase font-bold">Body Fat</div>
+                        </div>
+                        <div class="bg-black/60 rounded-xl p-4 border border-red-500/50">
+                            <div class="text-3xl font-black gradient-text mb-1">5+</div>
+                            <div class="text-xs text-red-400 uppercase font-bold">Years</div>
+                        </div>
+                    </div>
+                    <div class="text-white text-sm font-bold">
+                        +26kg muscle • -8% body fat • Official MuscleBlaze Athlete • 100K+ community
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Milestones -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-black text-center mb-12">
+                    <span class="gradient-text">KEY MILESTONES</span>
+                </h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                        <div class="text-5xl mb-3">🎯</div>
+                        <div class="text-3xl font-black gradient-text mb-2">+26kg</div>
+                        <div class="text-gray-300 font-bold mb-2">Muscle Gained</div>
+                        <div class="text-xs text-gray-500">Pure lean mass</div>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                        <div class="text-5xl mb-3">📉</div>
+                        <div class="text-3xl font-black gradient-text mb-2">-8%</div>
+                        <div class="text-gray-300 font-bold mb-2">Body Fat Lost</div>
+                        <div class="text-xs text-gray-500">From 18% to 10%</div>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                        <div class="text-5xl mb-3">💪</div>
+                        <div class="text-3xl font-black gradient-text mb-2">140kg</div>
+                        <div class="text-gray-300 font-bold mb-2">Bench Press</div>
+                        <div class="text-xs text-gray-500">From 40kg to 140kg</div>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center transform hover:scale-105 transition">
+                        <div class="text-5xl mb-3">🏋️</div>
+                        <div class="text-3xl font-black gradient-text mb-2">180kg</div>
+                        <div class="text-gray-300 font-bold mb-2">Deadlift</div>
+                        <div class="text-xs text-gray-500">From 60kg to 180kg</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year by Year Progress -->
+            <div class="space-y-8">
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10 card-hover">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-1/4">
+                            <div class="text-4xl font-black gradient-text mb-2">2019</div>
+                            <div class="text-sm text-gray-400">The Foundation Year</div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-2xl font-bold mb-4">Building The Base</h3>
+                            <p class="text-gray-400 mb-4">
+                                Started with basic compound movements, learned proper form, and established consistency. Focused on progressive overload and understanding my body's response to training. Gained 8kg of quality muscle mass.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-red-500/10 text-red-500 rounded-full text-sm">+8kg Muscle</span>
+                                <span class="px-3 py-1 bg-red-500/10 text-red-500 rounded-full text-sm">Learned Form</span>
+                                <span class="px-3 py-1 bg-red-500/10 text-red-500 rounded-full text-sm">Built Routine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 rounded-2xl p-8 border border-white/10 card-hover">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-1/4">
+                            <div class="text-4xl font-black gradient-text mb-2">2020</div>
+                            <div class="text-sm text-gray-400">The Growth Year</div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-2xl font-bold mb-4">Pushing Boundaries</h3>
+                            <p class="text-gray-400 mb-4">
+                                Trained through lockdowns with home workouts. Mastered nutrition timing and started using MuscleBlaze supplements. Developed mental resilience and discipline. Added 7kg of muscle despite challenges.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-red-500/10 text-red-500 rounded-full text-sm">+7kg Muscle</span>
+                                <span class="px-3 py-1 bg-red-500/10 text-red-500 rounded-full text-sm">Home Workouts</span>
+                                <span class="px-3 py-1 bg-red-500/10 text-red-500 rounded-full text-sm">Nutrition Dialed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                
